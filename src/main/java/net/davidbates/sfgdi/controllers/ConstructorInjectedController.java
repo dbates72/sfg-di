@@ -1,2 +1,15 @@
-package net.davidbates.sfgdi.controllers;public class ConstructorInjectedController {
+package net.davidbates.sfgdi.controllers;
+
+import net.davidbates.sfgdi.services.GreetingService;
+
+public class ConstructorInjectedController {
+    private final GreetingService greetingService;
+
+    public ConstructorInjectedController (GreetingService greetingService) {
+        this.greetingService=greetingService;
+    }
+
+    public String getGreeting() {
+        return this.greetingService.sayGreeting();
+    }
 }

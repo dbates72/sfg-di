@@ -1,4 +1,4 @@
-package net.davidbates.controllers;
+package net.davidbates.sfgdi.controllers;
 
 import org.springframework.stereotype.Controller;
 
