@@ -3,7 +3,7 @@ package net.davidbates.sfgdi.controllers;
 import net.davidbates.sfgdi.services.GreetingService;
 
 public class PropertyInjectedController {
-    public GreetingService greetingService;
+    public GreetingService greetingService=null;
 
     public String getGreeting() {
         return greetingService.sayGreeting();
