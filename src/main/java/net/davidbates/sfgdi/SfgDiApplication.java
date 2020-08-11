@@ -1,9 +1,6 @@
 package net.davidbates.sfgdi;
 
-import net.davidbates.sfgdi.controllers.ConstructorInjectedController;
-import net.davidbates.sfgdi.controllers.MyController;
-import net.davidbates.sfgdi.controllers.PropertyInjectedController;
-import net.davidbates.sfgdi.controllers.SetterInjectionController;
+import net.davidbates.sfgdi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -17,6 +14,10 @@ public class SfgDiApplication {
 		MyController myctrlr= (MyController) ctx.getBean("myController");
 		String greeting = myctrlr.sayHello();
 		System.out.println(greeting);
+
+		System.out.println("-------------------Qualifier");
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+		System.out.println(i18nController.sayHello());
 
 		System.out.println("-------------------Property");
 		PropertyInjectedController propertyInjectedController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
