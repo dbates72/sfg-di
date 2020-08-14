@@ -1,0 +1,35 @@
+# this is a comment
+
+name: David
+names: #Comment
+  - John
+  - Paul
+  - Ringo
+
+pound_sign: "#"
+
+book:
+  author: Joe Buck
+  publisher: Random House
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No, False, FALSE
+
+string_val: "this is it's quote"
+
+colon_string: "my courses: one two three"
+
+include_new_lines: |
+  one line
+  two line
+  three line
+
+ignore_new_lines: >
+  one line
+  two lines
+  three lines
