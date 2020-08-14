@@ -3,3 +3,10 @@ guru:
     username: jmsusername
     password: jsmpassword
     url: jmsurl
+
+---
+spring:
+  profiles: ES
+guru:
+  jms:
+    username: JMS Username in Spanish
